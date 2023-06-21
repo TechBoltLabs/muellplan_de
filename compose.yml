@@ -1,14 +1,11 @@
 version: '3'
 services:
   muellplan_de:
-    image: muellplan_de:v0.0.9_localhost
-    networks:
-      - muellplan_de-network
+    image: muellplan_de:latest
     ports:
       - "8000:80"
+    environment:
+      - TZ=Europe/Berlin
+      - BACKEND_HOST=<your hostname (including port) to your instance of muellplan_de-backend>
     container_name: muellplan_de
     restart: unless-stopped
-
-networks:
-  muellplan_de-network:
-    external: true
