@@ -1,0 +1,14 @@
+version: '3'
+services:
+  muellplan_de:
+    image: muellplan_de:v0.0.9_localhost
+    networks:
+      - muellplan_de-network
+    ports:
+      - "8000:80"
+    container_name: muellplan_de
+    restart: unless-stopped
+
+networks:
+  muellplan_de-network:
+    external: true
