@@ -1,4 +1,4 @@
-// lib/models/custom_elements/decorations.dart
+// lib/widgets/shared/decorations.dart
 
 import 'package:flutter/material.dart';
 
