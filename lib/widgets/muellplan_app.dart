@@ -4,9 +4,7 @@
 import 'package:flutter/material.dart';
 
 // import local files
-import '../widgets/homepage/homepage.dart';
 import '../routes.dart';
-import '../constants/constants_barrel.dart';
 
 // the main widget of the app
 // this is the root of the project

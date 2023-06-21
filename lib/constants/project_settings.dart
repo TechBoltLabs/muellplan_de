@@ -13,4 +13,5 @@ const int numberOfUpcomingDatesInCards = 2;
 
 // backend
 const bool productionBackend = true;
+// TODO: get the backend host from the environment
 const String backendHost = productionBackend ? "https://api.muellplan.de" : "http://localhost:3000";

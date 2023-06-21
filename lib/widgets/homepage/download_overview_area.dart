@@ -5,10 +5,8 @@
 // TODO: implement download for mobile and for desktop
 
 import 'package:flutter/material.dart';
-import 'package:muellplan_de/widgets/shared/download_area_heading.dart';
 import 'package:provider/provider.dart';
 
-import '../../models/custom_elements/decorations.dart';
 import '../../notifiers/map_and_location_notifier.dart';
 import '../shared/shared_barrel.dart';
 

@@ -1,14 +1,16 @@
 // lib/widgets/mail-subscription/mail-subscription.dart
 
+// import libraries
 import 'package:flutter/material.dart';
-import 'package:muellplan_de/constants/constants_barrel.dart';
-import 'package:muellplan_de/models/custom_elements/decorations.dart';
-import 'package:muellplan_de/notifiers/map_and_location_notifier.dart';
-import 'package:muellplan_de/widgets/homepage/location_and_category_settings.dart';
 import 'package:provider/provider.dart';
 
-import '../../drawer.dart';
+// import local files
+import '../../constants/constants_barrel.dart';
+import '../../notifiers/map_and_location_notifier.dart';
 import '../../services/api/api_barrel.dart';
+import '../../widgets/shared/shared_barrel.dart';
+import '../../widgets/homepage/location_and_category_settings.dart';
+import '../../drawer.dart';
 import '../my_appbar.dart';
 
 class MailSubscription extends StatefulWidget {

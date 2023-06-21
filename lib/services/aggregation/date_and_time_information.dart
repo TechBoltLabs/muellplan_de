@@ -1,6 +1,6 @@
 // lib/services/aggregation/date_and_time_information.dart
 
-import 'package:muellplan_de/constants/constants_barrel.dart';
+import '../../constants/constants_barrel.dart';
 
 // this method transforms a provided date from the database to an european date format
 // but only the day and month

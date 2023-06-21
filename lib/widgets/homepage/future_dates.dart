@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../constants/constants_barrel.dart';
-import '../../models/custom_elements/decorations.dart';
 import '../../notifiers/map_and_location_notifier.dart';
 import '../../services/services_barrel.dart';
 import '../shared/shared_barrel.dart';

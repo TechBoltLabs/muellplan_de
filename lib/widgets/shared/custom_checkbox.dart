@@ -5,7 +5,7 @@ import 'package:provider/provider.dart';
 
 import '../../../notifiers/map_and_location_notifier.dart';
 import '../../../constants/constants_barrel.dart';
-import '../../../models/custom_elements/decorations.dart';
+import 'shared_barrel.dart';
 
 // a custom checkbox widget for selecting litter categories to be displayed on the homepage
 class MuellplanAPPCustomCheckbox extends StatefulWidget {
