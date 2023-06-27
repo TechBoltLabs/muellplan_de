@@ -2,6 +2,7 @@
 
 import 'package:muellplan_de/notifiers/map_and_location_notifier.dart';
 
+// TODO: move this part to server side
 String getPDFDownloadURL(MapAndLocationNotifier notifier, String location, String street){
   String locationCode = notifier.fetchedLocations[location]!;
   String streetCode = notifier.fetchedStreets[street]!;
