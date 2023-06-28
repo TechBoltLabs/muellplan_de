@@ -313,7 +313,7 @@ delimiter ;
 --    - date: the date of the collection date
 --    - category: the litter category, which will be collected on the collection date
 create or replace view collectionDatesView as
-select l.locationName, s.streetName, cd.date, lc.category
+select l.locationName, s.streetName, cd.date, lc.category, lc.category_identifier
 from locations l
          join streets s on l.id = s.location_ID
          join collectionDates cd on s.id = cd.street_id
