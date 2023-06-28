@@ -240,15 +240,6 @@ class _MailSubscriptionState extends State<MailSubscription> {
                                         mapAndLocationNotifier
                                             .getSelectedCategoriesAsString();
 
-                                    // print values
-                                    print('name: $name');
-                                    print('email: $email');
-                                    print('days: $days');
-                                    print('time: $time');
-                                    print('locationCode: $locationCode');
-                                    print('streetCode: $streetCode');
-                                    print('categories: $categoriesStr');
-
                                     // send mail
                                     subscribeToMail(
                                         name: name,
