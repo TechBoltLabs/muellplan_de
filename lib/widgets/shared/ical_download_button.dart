@@ -2,6 +2,7 @@
 
 // import libraries
 import 'package:flutter/material.dart';
+import 'package:muellplan_de/widgets/shared/customInputDialog.dart';
 
 // import local files
 import '../../constants/constants_barrel.dart';
@@ -34,15 +35,26 @@ class ICalDownloadButton extends StatelessWidget {
             // TODO: implement buttonPress on iCal
 
             // show dialog 'button not implemented yet'
-            ScaffoldMessenger.of(context).showSnackBar(
-              const SnackBar(
-                  backgroundColor: Colors.amberAccent,
-                  content: Text(
-                    'Dieser Button ist noch nicht implementiert! Es folgt in Kürze...',
-                    style: TextStyle(
-                      color: Colors.black,
-                    ),)),
-            );
+            // ScaffoldMessenger.of(context).showSnackBar(
+            //   const SnackBar(
+            //       backgroundColor: Colors.amberAccent,
+            //       content: Text(
+            //         'Dieser Button ist noch nicht implementiert! Es folgt in Kürze...',
+            //         style: TextStyle(
+            //           color: Colors.black,
+            //         ),)),
+            // );
+            // FIXME: dialog is shown even if only location is selected
+            if (notifier.selectedLocation.trim().isEmpty || notifier.selectedStreet.trim().isEmpty){
+              ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(
+                  content: Text("Bitte wählen Sie zuerst einen Ort und eine Straße aus!"),
+                  backgroundColor: Colors.red,
+                ),
+              );
+            } else{
+              showCustomDialog(context);
+            }
           },
           child: Container(
             padding: const EdgeInsets.all(10),

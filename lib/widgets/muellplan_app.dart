@@ -19,6 +19,14 @@ class MuellplanAPP extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.teal,
       ),
+      builder: (context, child) {
+        return child != null
+            ? MediaQuery(
+          data: MediaQuery.of(context).copyWith(alwaysUse24HourFormat: true),
+          child: child,
+        )
+            : const SizedBox.shrink();
+      },
       // create a new HomePage widget with the title "muellplan.de"
       // home: const HomePage(title: projectTitle),
     );
